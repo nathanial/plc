@@ -1,14 +1,16 @@
-from instructions.math import *
+from instructions.instruction import *
 
 class Statement(object):
     def __init__(self, instruction, arguments, rung):
-        self.instruction = instruction.strip()
+        self.instruction = Instruction.lookup(instruction.strip())
         self.arguments = [arg.strip() for arg in arguments]
         self.rung = rung
     def __str__(self):
         return "%s %s" % (self.instruction, self.arguments)
     def __repr__(self):
         return self.__str__()
+    def desc(self):
+        return self.instruction.description
 
 class Program(object):
     def __init__(self, statements):
@@ -49,5 +51,6 @@ if __name__ == '__main__':
     program = parser.parse(f)
     for stmt in program.rung(1):
         print stmt
+        print stmt.desc()
     f.close()
 
