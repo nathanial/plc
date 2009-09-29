@@ -1,3 +1,6 @@
+from plc.instructions.instruction import Instruction
+
+
 class ascii_in(Instruction):
       code = "AIN"
       description = """

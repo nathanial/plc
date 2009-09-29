@@ -1,3 +1,4 @@
+from plc.instructions.instruction import Instruction
 class sum(Instruction):
       code = "SUM"
       description = """

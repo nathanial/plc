@@ -1,3 +1,4 @@
+from plc.instructions.instruction import Instruction
 class _and(Instruction):
       code = "AND"
       description = """

@@ -1,3 +1,4 @@
+from plc.instructions.instruction import Instruction
 class load(Instruction):
       code = "LD"
       description = """

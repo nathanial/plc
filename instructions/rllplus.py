@@ -1,3 +1,4 @@
+from plc.instructions.instruction import Instruction
 class initial_stage(Instruction):
       code = "ISG"
       description = """

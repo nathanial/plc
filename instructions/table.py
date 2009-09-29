@@ -1,3 +1,4 @@
+from plc.instructions.instruction import Instruction
 class move(Instruction):
       code = "MOV"
       description = """

@@ -1,3 +1,4 @@
+from plc.instructions.instruction import Instruction
 class date(Instruction):
       code = "DATE"
       description = """

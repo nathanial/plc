@@ -1,3 +1,4 @@
+from plc.instructions.instruction import Instruction
 class square_root_real(Instruction):
       code = "SQRTR"
       description = """

@@ -1,3 +1,4 @@
+from plc.instructions.instruction import Instruction
 class tuned_drum_with_discrete_outputs(Instruction):
       code = "DRUM"
       description = """

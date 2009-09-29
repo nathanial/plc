@@ -1,3 +1,4 @@
+from plc.instructions.instruction import Instruction
 class fault_label(Instruction):
       code = "FAULT"
       description = """

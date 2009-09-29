@@ -1,3 +1,4 @@
+from plc.instructions.instruction import Instruction
 class read_from_intelligent_module(Instruction):
       code = "RD"
       description = """

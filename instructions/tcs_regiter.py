@@ -1,3 +1,4 @@
+from plc.instructions.instruction import Instruction
 class timer(Instruction):
       code = "TMR"
       description = """

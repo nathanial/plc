@@ -1,4 +1,4 @@
-
+from plc.instructions.instruction import Instruction
 
 class store_if_equal(Instruction):
       code = "STRE"

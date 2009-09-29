@@ -1,3 +1,4 @@
+from plc.instructions.instruction import Instruction
 class modbus_read(Instruction):
       code = "MRX"
       description = """
